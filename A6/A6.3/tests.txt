@@ -1,0 +1,15 @@
+Buch ohne Titel kann nicht erstellt werden
+    pw.test("Status code is 400", () => {
+        pw.expect(pw.response.status).toBe(400);
+    });
+
+Nicht existierende Bücher können nicht ausgeliehen werden
+    pw.test("Status code is 404", () => {
+        pw.expect(pw.response.status).toBe(404);
+    });
+
+Buch kann nicht 2 mal gleichzeitig ausgeliehen werden
+    pw.test("Status code is 422", () => {
+        pw.expect(pw.response.status).toBe(422);
+    });
+
